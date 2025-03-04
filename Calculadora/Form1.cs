@@ -63,5 +63,18 @@ namespace Calculadora
 
             LbResultado.Text = resultado.ToString();
         }
+
+        private void BtSeguir_Click(object sender, EventArgs e)
+        {
+            NumOper1.Text = LbResultado.Text;
+        }
+
+        private void BtLimpar_Click(object sender, EventArgs e)
+        {
+            NumOper1.Value = 0;
+            NumOper2.Value = 0;
+           LbResultado.Text = "0";
+           
+        }
     }
 }

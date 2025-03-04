@@ -39,6 +39,8 @@
             this.Btmult = new System.Windows.Forms.Button();
             this.Btdiv = new System.Windows.Forms.Button();
             this.ButIgual = new System.Windows.Forms.Button();
+            this.BtSeguir = new System.Windows.Forms.Button();
+            this.BtLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.NumOper1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumOper2)).BeginInit();
             this.SuspendLayout();
@@ -173,11 +175,33 @@
             this.ButIgual.UseVisualStyleBackColor = true;
             this.ButIgual.Click += new System.EventHandler(this.ButIgual_Click);
             // 
+            // BtSeguir
+            // 
+            this.BtSeguir.Location = new System.Drawing.Point(301, 206);
+            this.BtSeguir.Name = "BtSeguir";
+            this.BtSeguir.Size = new System.Drawing.Size(137, 46);
+            this.BtSeguir.TabIndex = 12;
+            this.BtSeguir.Text = "SEGUIR";
+            this.BtSeguir.UseVisualStyleBackColor = true;
+            this.BtSeguir.Click += new System.EventHandler(this.BtSeguir_Click);
+            // 
+            // BtLimpar
+            // 
+            this.BtLimpar.Location = new System.Drawing.Point(444, 206);
+            this.BtLimpar.Name = "BtLimpar";
+            this.BtLimpar.Size = new System.Drawing.Size(125, 46);
+            this.BtLimpar.TabIndex = 13;
+            this.BtLimpar.Text = "LIMPAR";
+            this.BtLimpar.UseVisualStyleBackColor = true;
+            this.BtLimpar.Click += new System.EventHandler(this.BtLimpar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtLimpar);
+            this.Controls.Add(this.BtSeguir);
             this.Controls.Add(this.ButIgual);
             this.Controls.Add(this.Btdiv);
             this.Controls.Add(this.Btmult);
@@ -212,6 +236,8 @@
         private System.Windows.Forms.Button Btmult;
         private System.Windows.Forms.Button Btdiv;
         private System.Windows.Forms.Button ButIgual;
+        private System.Windows.Forms.Button BtSeguir;
+        private System.Windows.Forms.Button BtLimpar;
     }
 }
 
